@@ -9,6 +9,7 @@ int main(){
   bool esCorrecto= false;
   int edad=26;
   int edad2;
+  bool diferencia;
   bool muchadiferencia(int diferencia, int edadnueva, int num1, int num2){
     return (num1-num2 > diferencia)
   }
@@ -33,13 +34,15 @@ int main(){
 }*/
   cout <<"cuantos años tienes";
   cin>>edad2;
-  if(edad1==edad-1){
+  if(edad==edad-1){
     cout<<"Eres un bebeee";
   }
   if(edad2==edad+1){
     cout<<"Eres un anciano";
   }
   }
+  if diferencia  = muchadiferencia(5,edad,edad2);
+  cout << "hay mucha diferencia de edad";
 
   return 0;
 }
