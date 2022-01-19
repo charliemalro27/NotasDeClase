@@ -9,6 +9,9 @@ int main(){
   bool esCorrecto= false;
   int edad=26;
   int edad2;
+  bool muchadiferencia(int diferencia, int edadnueva, int num1, int num2){
+    return (num1-num2 > diferencia)
+  }
 
   /*cout<<saludo<<endl;
   cout<<"Primera prueba de c++";
@@ -36,7 +39,7 @@ int main(){
   if(edad2==edad+1){
     cout<<"Eres un anciano";
   }
-}
+  }
 
   return 0;
 }
