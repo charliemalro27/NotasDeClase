@@ -9,8 +9,11 @@ int main(){
   cout<<"Primera prueba de c++";
   */
 
-  cin >> repetir;
-  cout << repetir<<endl;
+  cout << "escribe una palabra";
 
+  while (true){
+  cin >> repetir >> endl;
+  cout << repetir << endl;
+}
   return 0
 }
