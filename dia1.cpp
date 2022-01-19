@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 	string palabra;
 	int numero1 = 3;
-	int numero2 = 2, numero3 = 3;
+	int numero2 = 222222, numero3 = 3;
 	const int NUMERO = 0;
 	double decimal;
 	char letra;
