@@ -1,0 +1,22 @@
+using namespace std;
+
+
+int main(){
+int xint, yint;
+string xstr, ystr;
+xint =10;
+yint=20;
+xstr="10";
+ystr=20;
+cout << xint << endl;
+cout << xsrt << endl;
+cout << "int x+y ="<< xint + yint << endl;
+cout << "str x+y ="<< xstr + ystr << endl;
+cout << "xstr + to_string(yint)"<< xstr + to_string(yint)<<endl;
+cout << "stoi(xstr) + yint "<< stoi(xstr) + yint << endl;
+cout << "yint + stoi(xstr) = " << yint + stoi(xstr) << endl;
+
+palabra<<endl;
+cout << "la palabra tiene"<<palabra.length()<<"letras."<<endl;
+cout << "la palabra tiene"<<palabra.size()<<"letras."<<endl;
+}
