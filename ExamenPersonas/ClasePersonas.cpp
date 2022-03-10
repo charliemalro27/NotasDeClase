@@ -18,7 +18,7 @@ class Persona{
   public:
 
   //Constructor
-    Persona(string Nombre="Charlie",string DNI="75943840W", int Edad=24){
+    Persona(string Nombre="Charlie",string DNI="75943840W", int Edad=18){
       this->Nombre=Nombre;
       this->DNI=DNI;
       this->Edad=Edad;
@@ -52,6 +52,10 @@ class Persona{
       cout<<"Esta es la edad: "<<this->Edad<<endl;
     }
 
+    void imprimirFrase(){
+       cout<<"Me llamo "<<this->Nombre<<" "<<"tengo"<<" "<<this->Edad<<" "<<"anos"<<" "<<"y mi DNI es"<<" "<<this->DNI<<endl;
+    }
+
     //GETS
 
 
@@ -73,6 +77,7 @@ int main(){
   PersonillaDefecto.imprimirNombre();
   PersonillaDefecto.imprimirDNI();
   PersonillaDefecto.imprimirEdad();
+  PersonillaDefecto.imprimirFrase();
   cout<<endl;
 
   cout<<"Estos son los valores con sets establecidos"<<endl;
@@ -82,6 +87,7 @@ int main(){
   Personilla.imprimirNombre();
   Personilla.imprimirDNI();
   Personilla.imprimirEdad();
+  Personilla.imprimirFrase();
   cout<<endl;
 
 
