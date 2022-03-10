@@ -70,6 +70,20 @@ class Persona{
       return this->Edad;
     }
 
+    //Metodos
+
+
+    void MayorOmenor(int edad){
+      if(this->Edad>=18)
+      {
+        cout<<"Eres mayor de edad "<<endl;
+      }
+      if(this->Edad<18)
+      {
+        cout<<"Eres menor de edad "<<endl;
+      }
+
+    }
 
 };
 
@@ -90,16 +104,24 @@ int main(){
   PersonillaDefecto.imprimirFrase();
   cout<<endl;
 
+  int Edad2;
+  Edad2=PersonillaDefecto.getEdad();
+  PersonillaDefecto.MayorOmenor(Edad2);
+  cout<<endl;
+
   cout<<"Estos son los valores con sets establecidos"<<endl;
   Personilla.setNombre("Rodolfo");
   Personilla.setDNI("26953870U");
-  Personilla.setEdad(28);
+  Personilla.setEdad(14);
   Personilla.imprimirNombre();
   Personilla.imprimirDNI();
   Personilla.imprimirEdad();
   Personilla.imprimirFrase();
   cout<<endl;
 
+  int Edad;
+  Edad=Personilla.getEdad();
+  Personilla.MayorOmenor(Edad);
 
 
 
