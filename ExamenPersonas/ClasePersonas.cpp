@@ -14,6 +14,7 @@ class Persona{
     string Nombre;
     string DNI;
     int Edad;
+    vector <int> VIP;
 
   public:
 
@@ -36,6 +37,10 @@ class Persona{
 
     void setEdad(int Edad){
       this->Edad=Edad;
+    }
+
+    void setVIP(vector <int> VIP){
+      this->VIP=VIP;
     }
 
     //Imprimir
@@ -87,10 +92,6 @@ class Persona{
 
 };
 
-
-
-
-
 int main(){
 
   Persona PersonillaDefecto;
@@ -122,7 +123,15 @@ int main(){
   int Edad;
   Edad=Personilla.getEdad();
   Personilla.MayorOmenor(Edad);
+  cout<<endl;
 
+  cout<<"Introduce los numeros VIPS"<<endl;
+  int numero1,numero2,numero3;
+  cin>>numero1;
+  cin>>numero2;
+  cin>>numero3;
+  vector <int> VIP={numero1,numero2,numero3};
+  Personilla.setVIP(VIP);
 
 
 
