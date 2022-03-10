@@ -77,7 +77,6 @@ class Persona{
 
     //Metodos
 
-
     void MayorOmenor(int edad){
       if(this->Edad>=18)
       {
@@ -90,6 +89,18 @@ class Persona{
 
     }
 
+    void comprobacionVIP(vector<int> VIP){
+      int sumatoria=0;
+      for(int i=0;i<VIP.size();i++){
+        sumatoria+=VIP[i];
+      }
+      if (sumatoria/11==0){
+      cout<<"Enhorabuena eres VIP! "<<endl;}
+      else{
+        cout<<"Sorry no eres VIP "<<endl;
+      }
+
+    }
 };
 
 int main(){
@@ -132,6 +143,7 @@ int main(){
   cin>>numero3;
   vector <int> VIP={numero1,numero2,numero3};
   Personilla.setVIP(VIP);
+  Personilla.comprobacionVIP(VIP);
 
 
 
