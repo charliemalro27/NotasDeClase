@@ -73,6 +73,16 @@ int main(){
   PersonillaDefecto.imprimirNombre();
   PersonillaDefecto.imprimirDNI();
   PersonillaDefecto.imprimirEdad();
+  cout<<endl;
+
+  cout<<"Estos son los valores con sets establecidos"<<endl;
+  Personilla.setNombre("Rodolfo");
+  Personilla.setDNI("26953870U");
+  Personilla.setEdad(28);
+  Personilla.imprimirNombre();
+  Personilla.imprimirDNI();
+  Personilla.imprimirEdad();
+  cout<<endl;
 
 
 
