@@ -58,7 +58,17 @@ class Persona{
 
     //GETS
 
+    string getNombre(){
+      return this->Nombre;
+    }
 
+    string getDNI(){
+      return this->DNI;
+    }
+
+    int getEdad(){
+      return this->Edad;
+    }
 
 
 };
