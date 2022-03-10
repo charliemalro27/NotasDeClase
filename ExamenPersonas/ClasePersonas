@@ -1,0 +1,74 @@
+#include <iostream>
+#include <vector>
+#include <math.h>
+
+using namespace std;
+
+
+//Clase
+
+class Persona{
+
+  private:
+
+    string Nombre;
+    string DNI;
+    int Edad;
+
+  public:
+
+  //Constructor
+    Persona(string Nombre="Charlie",string DNI="75943840W", int Edad=24){
+      this->Nombre=Nombre;
+      this->DNI=DNI;
+      this->Edad=Edad;
+    }
+
+    //SETS
+
+    void setNombre(string Nombre){
+      this->Nombre=Nombre;
+    }
+
+    void setDNI(string DNI){
+      this->DNI=DNI;
+    }
+
+    void setEdad(int Edad){
+      this->Edad=Edad;
+    }
+
+    //Imprimir
+
+    void imprimirNombre(){
+      cout<<this->Nombre<<endl;
+    }
+
+    void imprimirDNI(){
+      cout<<this->DNI<<endl;
+    }
+
+    void imprimirEdad(){
+      cout<<this->Edad<<endl;
+    }
+
+};
+
+
+
+
+
+int main(){
+
+  Persona Personilla;
+  Personilla.imprimirNombre();
+  Personilla.imprimirDNI();
+  Personilla.imprimirEdad();
+
+
+
+
+
+
+  return 0;
+}
