@@ -3,6 +3,10 @@
   -git init.
 2.3. Clonar un repositorio.
   -git clone "url".
-2.4. Encontrarnos en el repositorio.  
+2.4. Encontrarnos en el repositorio.
 3.Ver el estado del repositorio.
-  - git status.
+  -git status.
+4.Preparar los documentos modificados.
+  -git add "nombrearchivo".
+5.Para hacer commit.
+  -git commit -m "comentario".
