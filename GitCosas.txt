@@ -8,5 +8,37 @@
   -git status.
 4.Preparar los documentos modificados.
   -git add "nombrearchivo".
+  -git add . sube todos los archivos.
 5.Para hacer commit.
   -git commit -m "comentario".
+6.Para subir github:
+  -git push "url".
+  -git remote -u origin "url"
+  -git push -u origin "rama"
+7.para ver el registro de commits:
+  7.1.Vemos los comits(para salir q).
+    -git log.
+  7.2.Commits + detalle:
+    -git log -p.
+  7.3.Ver el ultimo registro:
+    -git log -1.
+  8.Detalle para las modificaciones:
+    -git diff.
+  9.Ramas.
+    9.1.Mostrar ramas:
+      -git branch.
+    9.2.Crear ramas:
+      -git branch "nombre".
+    9.3.Renombrar rama:
+      -git branch -m "nombre".
+    9.4.Eliminar rama(No puedo eliminar una rama desde esa rama):
+      -git branch -d "nombre". // Une la rama "nombre" con la master.
+      -git branch -D "nombre" // Fuerza la eliminacion.
+    9.5.Cambiar de rama:
+      -git checkout "nombreRama".
+    9.6.Pushear a git una rama:
+      -git push "url repositorio del que vamos"
+    10.Unir cosas.
+      10.1.Si solo se han hecho modificaciones en la rama"hijo"podemos usar.
+        -git merge"rama destino".
+      10.2.Si se han hecho modificaciones tanto en la rama "padre"como "hijo"
